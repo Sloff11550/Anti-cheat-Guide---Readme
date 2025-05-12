@@ -216,7 +216,46 @@ If you found this project useful, you might also appreciate the work of other gr
 
 ## 🔗 External Resources
 
-* [Easy Anti-Cheat FAQ](https://www.easy.ac/en-us/support/game/issues/anticheat/)
+## ❓ Frequently Asked Questions (FAQ)
+
+* \[Easy Anti-Cheat ## ❓ Frequently Asked Questions (FAQ)
+
+### Is this a bypass or cheat tool?
+
+No. This guide is purely educational. It offers transparency, control, and awareness. There are no bypasses, no hacks, and no exploits—just information and scripts for users who want to manage their system.
+
+### Does this guide remove anti-cheat software completely?
+
+Not always. Some anti-cheat services can be removed using these instructions, but others are deeply embedded and require more advanced steps or admin privileges. This guide helps stop or disable them—but full removal is a case-by-case situation.
+
+### Will I get banned for doing this?
+
+Possibly. If a game detects tampering with its anti-cheat, even outside of gameplay, it could result in a ban. That said, stopping services *after* you uninstall a game is generally safer. Unless you're trying to remove it permanently, the safer option is to just stop the service while you're not playing. If you plan to play the game again, simply restarting your computer should allow the anti-cheat to re-enable properly. When in doubt, reach out to the game's developer or support team to ask what they recommend. Always do your research.
+
+### Why aren’t there more anti-cheat systems listed?
+
+Because this is an early-stage guide. It will expand as more systems are added. Feel free to contribute or submit updates!
+
+### Why didn’t a service show up when I ran the scan?
+
+Some anti-cheats only activate when the game is running and don’t install a persistent system service. This guide focuses on services that are installed and persist outside of gameplay.
+
+### I’m not a tech expert. How can I verify what these scripts do?
+
+You can paste them into tools like ChatGPT, Google Gemini, or any AI assistant to get a breakdown of what each script does. Or, if you're not sure, you can also ask a tech-savvy friend or someone you trust. This helps build trust and understanding.
+
+### Is this guide safe?
+
+Every script has been tested and uses built-in Windows PowerShell commands only. That said, always review scripts and understand what they do before running them. Never blindly trust code—no matter the source.
+
+### Can I share this with friends or on social media?
+
+Absolutely! That’s encouraged. The more people who understand this issue, the better.
+
+---
+
+If your question isn't listed, feel free to submit an issue or start a discussion on the GitHub project.]\([https://www.easy.ac/en-us/support/game/issues/anticheat/](https://www.easy.ac/en-us/support/game/issues/anticheat/))
+
 * [Riot Vanguard Technical Info](https://support-valorant.riotgames.com/hc/en-us/articles/360044648213)
 * [Steam Uninstall Behavior](https://help.steampowered.com/)
 
