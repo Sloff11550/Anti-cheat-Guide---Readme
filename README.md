@@ -1,5 +1,7 @@
 # 🛡️ Anti-Cheat Removal & Awareness Toolkit
 
+> 🤖 **Powered with help from ChatGPT** — This guide was built and reviewed using ChatGPT to ensure accuracy, clear formatting, and that all PowerShell scripts are clean, functional, and beginner-friendly. AI was used for proofreading, formatting, command validation, and optimizing the guide’s structure for clarity.
+
 > ⚠️ **Disclaimer from the creator:** Don’t take my word for it. Always do your own research. Always fact check everything you read online—especially when it comes to system-level software. Knowledge is power, but only when it’s verified.
 >
 > 🔄 I will try to update this project regularly as new information or anti-cheat systems are discovered.
