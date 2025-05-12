@@ -64,6 +64,17 @@ This toolkit supports detection/removal for:
 
 ## 🚀 How to Use the Scripts
 
+> 📜 **Important Transparency Note:**
+> This project does not include any pre-made or downloadable PowerShell scripts. All script blocks provided here are "copy and paste ready" for manual use only.
+>
+> This is intentional. Users should always:
+>
+> * Review scripts before running them
+> * Understand what they do
+> * Modify them to suit their own system needs
+>
+> ⚠️ I strongly recommend verifying any script you run, even from this project. Blind trust in automation—even from helpful projects—is not good digital hygiene. This project is here to help you take control, not give it away.
+
 > 🧠 **New to PowerShell? Here's how to run these scripts:**
 >
 > 1. Open **Notepad**.
