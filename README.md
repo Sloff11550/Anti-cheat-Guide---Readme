@@ -2,7 +2,7 @@
 
 > 🤖 **Powered with help from ChatGPT** — This guide was built and reviewed using ChatGPT to ensure accuracy, clear formatting, and that all PowerShell scripts are clean, functional, and beginner-friendly. AI was used for proofreading, formatting, command validation, and optimizing the guide’s structure for clarity.
 
-> ⚠️ **Disclaimer from the creator:** Don’t take my word for it. Always do your own research. Always fact check everything you read online—especially when it comes to system-level software. Knowledge is power, but only when it’s verified.
+> ⚠️ **Disclaimer from the creator:** Don’t take my word for it. Always do your own research. Always fact check everything you read online—especially when it comes to system-level software. Knowledge is power, but only when it’s verified.⚠️
 >
 > 🔄 I will try to update this project regularly as new information or anti-cheat systems are discovered.
 
@@ -74,7 +74,7 @@ This toolkit supports detection/removal for:
 > * Modify them to suit their own system needs
 >
 > ⚠️ I strongly recommend verifying any script you run, even from this project. Blind trust in automation—even from helpful projects—is not good digital hygiene. This project is here to help you take control, not give it away.
-> You can also use tools like **ChatGPT**, **Google Gemini**, or whatever AI tool you're comfortable with to help you review and understand the code before running it, especially if you're not familiar with PowerShell or scripting. These are free services, and even on the free tier you can get a few solid answers to help you understand what’s happening—without needing to pay for clarity or security.
+> You can also use tools like **ChatGPT**, **Google Gemini**, or whatever AI tool you're comfortable with to help you review and understand the code before running it, especially if you're not familiar with PowerShell or scripting. These are free services, and even on the free tier you can get a few solid answers to help you understand what’s happening—without needing to pay for clarity or security.⚠️
 
 > 🧠 **New to PowerShell? Here's how to run these scripts:**
 >
