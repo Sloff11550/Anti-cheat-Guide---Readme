@@ -62,6 +62,22 @@ This toolkit supports detection/removal for:
 
 ## 🚀 How to Use the Scripts
 
+> 🧠 **New to PowerShell? Here's how to run these scripts:**
+>
+> 1. Open **Notepad**.
+> 2. Copy and paste one of the PowerShell script blocks below.
+> 3. Save the file with a `.ps1` extension (for example: `stop_anti_cheats.ps1`).
+> 4. Right-click the file and choose **Run with PowerShell**.
+> 5. Or open PowerShell as Administrator, navigate to the script's folder, and type: `./stop_anti_cheats.ps1`
+>
+> ⚠️ If PowerShell gives a security warning or blocks the script, run this command first:
+>
+> ```powershell
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
+>
+> This allows local scripts to run while still protecting against remote unsigned ones.
+
 > **Run all scripts as Administrator** or they may fail silently.
 
 ### Stop All Known Anti-Cheat Services:
