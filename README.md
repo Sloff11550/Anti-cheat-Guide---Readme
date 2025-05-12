@@ -175,6 +175,24 @@ This repo provides both awareness **and tools to take control.**
 
 ---
 
+## 👤 About the Creator
+
+Hi, I’m Andrew — a longtime PC gamer who loves shooters, MMOs, and pretty much everything in between (except for a few genres I won’t name here 😄). I’ve spent years enjoying the best this platform has to offer.
+
+I absolutely support the need for anti-cheat, especially in multiplayer. I can’t stand cheaters. If you want to cheat in single-player, fine. But if you’re ruining the game for everyone else in the room? That’s where I draw the line.
+
+But what I don’t support is how far anti-cheat has gone. Kernel-level anti-cheat is invasive, risky, and often lacks transparency. It runs with higher permissions than most antivirus software, can remain after you uninstall the game, and puts your entire system at risk if it’s exploited—or simply mishandled. If these systems only monitored the game and shut down when it closed, I probably wouldn’t care. But they don’t.
+
+I decided to create this project because somebody had to. This isn't necessarily about removing the software completely (unless you want to)—it’s about giving you control over what’s running on your machine. You should have the right to decide whether something stays active after you stop playing.
+
+I can’t guarantee these methods won’t lead to a ban in some games—tampering always carries that risk. But I believe strongly that **no anti-cheat should be running 24/7** just because you installed a game. This guide gives you the option to control that.
+
+> 💡 If you're not sure whether the service has stopped or disabled correctly, you can always restart your computer. If you're about to play a game that uses anti-cheat, a fresh reboot will typically allow the service to start up normally—no manual reactivation needed.
+
+Please feel free to share this link with everyone you know, everywhere you can. The more people who understand this issue, the better.
+
+---
+
 ## 🔗 External Resources
 
 * [Easy Anti-Cheat FAQ](https://www.easy.ac/en-us/support/game/issues/anticheat/)
@@ -185,4 +203,4 @@ This repo provides both awareness **and tools to take control.**
 
 **Game fair. But play safe.**
 
-> Your FPS isn’t worth giving up your kernel.
+> Your FPS isn’t worth giving up your kernel. Play hard. Play to win. Just don’t cheat. And above all, have fun.
