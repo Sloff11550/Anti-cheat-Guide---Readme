@@ -38,6 +38,10 @@ This project provides:
 
 ## ⚙️ Supported Anti-Cheat Systems
 
+> 🧠 **Note on Easy Anti-Cheat (EAC):** Not all games using EAC install a persistent Windows service. Some only run EAC in user mode during gameplay. In these cases, the service `EasyAntiCheat` may not appear as installed when scanned, even though the anti-cheat is active during gameplay. This is actually preferred behavior, as the anti-cheat is not running when the game is closed.
+>
+> Similarly, **some other anti-cheat systems** (like BattlEye or GameGuard) can also be configured to only activate when the game launches. However, many are known to run persistently or load at boot, regardless of whether the game is open. This scanner is designed to detect only resident system-level services—not temporary user-mode instances.
+
 This toolkit supports detection/removal for:
 
 | Service Name     | Anti-Cheat        | Games (examples)           |
