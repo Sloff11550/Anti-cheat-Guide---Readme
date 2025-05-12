@@ -1,6 +1,8 @@
 # 🛡️ Anti-Cheat Removal & Awareness Toolkit
 
 > ⚠️ **Disclaimer from the creator:** Don’t take my word for it. Always do your own research. Always fact check everything you read online—especially when it comes to system-level software. Knowledge is power, but only when it’s verified.
+>
+> 🔄 I will try to update this project regularly as new information or anti-cheat systems are discovered.
 
 > A GitHub-hosted resource for disabling, removing, and understanding kernel-level anti-cheat software installed by modern games.
 
