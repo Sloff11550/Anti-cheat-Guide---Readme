@@ -193,6 +193,15 @@ Please feel free to share this link with everyone you know, everywhere you can. 
 
 ---
 
+## 📚 Recommended GitHub Projects
+
+If you found this project useful, you might also appreciate the work of other great creators in the tech and gaming community:
+
+* [Chris Titus Tech - Windows Utility Tool](https://github.com/ChrisTitusTech/winutil) — A powerful customization and debloating tool for Windows users. [https://github.com/ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil)
+* [MEMS Tech Tips](https://github.com/memstechtips) — System performance tweaks, utilities, and user privacy guides. [https://github.com/memstechtips](https://github.com/memstechtips)
+
+---
+
 ## 🔗 External Resources
 
 * [Easy Anti-Cheat FAQ](https://www.easy.ac/en-us/support/game/issues/anticheat/)
