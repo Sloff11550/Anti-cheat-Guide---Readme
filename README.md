@@ -177,6 +177,8 @@ This repo provides both awareness **and tools to take control.**
 
 ## 👤 About the Creator
 
+> 🧾 Feel free to share, remix, or build on this project—just give credit. If you modify it, all I ask is that you mention it was originally created by me (Andrew) and link back to this page. Let's make informed gaming better for everyone.
+
 Hi, I’m Andrew — a longtime PC gamer who loves shooters, MMOs, and pretty much everything in between (except for a few genres I won’t name here 😄). I’ve spent years enjoying the best this platform has to offer.
 
 I absolutely support the need for anti-cheat, especially in multiplayer. I can’t stand cheaters. If you want to cheat in single-player, fine. But if you’re ruining the game for everyone else in the room? That’s where I draw the line.
