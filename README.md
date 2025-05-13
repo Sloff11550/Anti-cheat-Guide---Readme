@@ -28,15 +28,39 @@ This project provides:
 
 ---
 
-## 🧰 What's Included
+## 📦 Example Resources Included
 
-### `/scripts/`
+### `/scripts/` (Examples)
 
-* `stop_all_anti_cheats.ps1` — Stops all known anti-cheat services
-* `disable_on_boot.ps1` — Prevents anti-cheats from restarting automatically
-* `check_status.ps1` — Shows what’s installed, running, or inactive
+* `stop_all_anti_cheats.ps1` — Stops all supported anti-cheat services listed in this guide
 
-### `/docs/`
+  ```powershell
+  $services = @("vgk","vgc","EasyAntiCheat","BEService","atvi-brynhildr","FACEIT","xhunter1","npggsvc")
+  foreach ($svc in $services) { sc.exe stop $svc 2>$null }
+  ```
+* `disable_on_boot.ps1` — Disables anti-cheat services from this list from starting automatically on boot
+
+  ```powershell
+  foreach ($svc in $services) {
+    Set-Service -Name $svc -StartupType Disabled -ErrorAction SilentlyContinue
+  }
+  ```
+* `check_status.ps1` — Checks the status of supported anti-cheat services listed in this guide
+
+  ```powershell
+  foreach ($svc in $services) {
+    $status = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    if ($status -and $status.Status -eq 'Running') {
+      Write-Host "$svc is RUNNING" -ForegroundColor Red
+    } elseif ($status) {
+      Write-Host "$svc is installed but NOT running" -ForegroundColor Yellow
+    } else {
+      Write-Host "$svc is NOT installed" -ForegroundColor Green
+    }
+  }
+  ```
+
+### `/docs/` (Reference Samples)
 
 * `Anti-Cheat_Removal_Guide.txt` — Full manual removal walkthrough (drivers, services, registry, etc.)
 * `Anti-Cheat_Guide_README.txt` — Summary for casual users
@@ -214,49 +238,61 @@ If you found this project useful, you might also appreciate the work of other gr
 
 ---
 
-## 🔗 External Resources
+## 📂 Case Study: Delta Force (2025) – ACE Anti-Cheat Controversy
 
-## ❓ Frequently Asked Questions (FAQ)
+> **Anti-Cheat System:** Anti-Cheat Expert (ACE)
+> **Developer/Publisher:** TiMi Studios / Tencent
+> **Kernel-Level:** Yes
+> **Uninstall Persistence:** Confirmed reports of the anti-cheat remaining active after game uninstall
+> **Privacy Risk Level:** **High** due to development origin, kernel access, and lack of transparency
 
-* \[Easy Anti-Cheat ## ❓ Frequently Asked Questions (FAQ)
+### Why This Matters:
 
-### Is this a bypass or cheat tool?
+* ACE runs with **Ring 0 privileges**, the highest level of access on your system.
+* Many users have reported that **uninstalling the game does not remove ACE**, which may continue to operate in the background.
+* This game has triggered **massive community backlash**, especially on Steam and Reddit.
 
-No. This guide is purely educational. It offers transparency, control, and awareness. There are no bypasses, no hacks, and no exploits—just information and scripts for users who want to manage their system.
+### What Users Can Do:
 
-### Does this guide remove anti-cheat software completely?
+Use the following **PowerShell or Command Prompt (as Administrator)** commands to remove ACE-related services from your system:
 
-Not always. Some anti-cheat services can be removed using these instructions, but others are deeply embedded and require more advanced steps or admin privileges. This guide helps stop or disable them—but full removal is a case-by-case situation.
+```powershell
+sc delete ACE-GAME
+sc delete ACE-BASE
+sc delete "AntiCheatExpert Service"
+sc delete "AntiCheatExpert Protection"
+```
 
-### Will I get banned for doing this?
+> ⚠️ **Warning:** These commands will **permanently remove** the listed services. Ensure no other installed games rely on them before proceeding.
 
-Possibly. If a game detects tampering with its anti-cheat, even outside of gameplay, it could result in a ban. That said, stopping services *after* you uninstall a game is generally safer. Unless you're trying to remove it permanently, the safer option is to just stop the service while you're not playing. If you plan to play the game again, simply restarting your computer should allow the anti-cheat to re-enable properly. When in doubt, reach out to the game's developer or support team to ask what they recommend. Always do your research.
+To check for remaining ACE-related services, run:
 
-### Why aren’t there more anti-cheat systems listed?
-
-Because this is an early-stage guide. It will expand as more systems are added. Feel free to contribute or submit updates!
-
-### Why didn’t a service show up when I ran the scan?
-
-Some anti-cheats only activate when the game is running and don’t install a persistent system service. This guide focuses on services that are installed and persist outside of gameplay.
-
-### I’m not a tech expert. How can I verify what these scripts do?
-
-You can paste them into tools like ChatGPT, Google Gemini, or any AI assistant to get a breakdown of what each script does. Or, if you're not sure, you can also ask a tech-savvy friend or someone you trust. This helps build trust and understanding.
-
-### Is this guide safe?
-
-Every script has been tested and uses built-in Windows PowerShell commands only. That said, always review scripts and understand what they do before running them. Never blindly trust code—no matter the source.
-
-### Can I share this with friends or on social media?
-
-Absolutely! That’s encouraged. The more people who understand this issue, the better.
+```powershell
+Get-Service | Where-Object { $_.Name -like "*ACE*" -or $_.DisplayName -like "*AntiCheatExpert*" }
+```
 
 ---
 
-If your question isn't listed, feel free to submit an issue or start a discussion on the GitHub project.]\([https://www.easy.ac/en-us/support/game/issues/anticheat/](https://www.easy.ac/en-us/support/game/issues/anticheat/))
+## 🔗 External Resources
+
+## 🌏 Region-Based Privacy Concerns (China-Specific Anti-Cheat Risks)
+
+### Are Chinese-made games using kernel-level anti-cheat a bigger risk?
+
+Yes, and it’s important to understand why. It’s not necessarily the developers themselves, but the laws in China that require companies to cooperate with government data requests—without needing user consent. If a Chinese-developed game installs a kernel-level anti-cheat, that software could—by law—be compelled to collect or expose sensitive system data. This makes anti-cheats developed under such jurisdiction a much higher privacy risk compared to others.
+
+This is why it's especially important to:
+
+* Verify what services a game installs
+
+* Understand where the anti-cheat software comes from
+
+* Be cautious about granting any kernel-level software 24/7 access to your system
+
+* More Links
 
 * [Riot Vanguard Technical Info](https://support-valorant.riotgames.com/hc/en-us/articles/360044648213)
+
 * [Steam Uninstall Behavior](https://help.steampowered.com/)
 
 ---
