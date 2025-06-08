@@ -1,18 +1,23 @@
-// ✅ Finalized Anti-Cheat Services & Drivers to Monitor
-// (excluding sysmain)
+/*
+ * ✅ Anti-Cheat Watchdog Core
+ * ----------------------------
+ * This code monitors known anti-cheat services and drivers from a Windows system tray app.
+ * It runs entirely in Ring 3 (User Mode), and never modifies system state.
+ *
+ * 📝 DISCLAIMER:
+ * This application can be run with or without administrator privileges.
+ * Running without admin grants access to basic service detection only.
+ * Running as administrator unlocks full system scanning capabilities, including:
+ *   - Access to protected system services and drivers
+ *   - Detection of hidden kernel-mode anti-cheats (e.g., vgk, BEDaisy, mhyprot2)
+ *   - Full WMI driver and service visibility
+ * Note: This app does not modify system state. It is read-only and safe to use.
+ *
+ * 🔓 LICENSE: MIT
+ * You are free to use, modify, distribute, and share this code for personal or commercial use.
+ * Just don't claim you wrote it all by yourself, and don't blame us if your toaster gains sentience.
+ */
 
-// 📝 DISCLAIMER:
-// This application can be run with or without administrator privileges.
-// Running without admin grants access to basic service detection only.
-// Running as administrator unlocks full system scanning capabilities, including:
-// - Access to protected system services and drivers
-// - Detection of hidden kernel-mode anti-cheats (e.g., vgk, BEDaisy, mhyprot2)
-// - Full WMI driver and service visibility
-// Note: This app does not modify system state. It is read-only and safe to use.
-//
-// 🔓 LICENSE: MIT
-// You are free to use, modify, distribute, and share this code for personal or commercial use.
-// Just don't claim you wrote it all by yourself, and don't blame us if your toaster gains sentience.
 
 using System;
 using System.Collections.Generic;
