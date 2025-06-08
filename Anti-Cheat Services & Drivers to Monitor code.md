@@ -1,4 +1,4 @@
-/*
+*
  * ✅ Anti-Cheat Watchdog Core
  * ----------------------------
  * This code monitors known anti-cheat services and drivers from a Windows system tray app.
