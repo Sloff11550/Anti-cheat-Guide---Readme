@@ -1,13 +1,15 @@
-# =============================================
-# Anti-Cheat Disabler & Status Checker (Windows)
-# Author: [Andrew or Sloff11550]
-# License: MIT
-# Description:
-#     This script attempts to disable all known kernel/user-mode anti-cheat
-#     services temporarily (until reboot), and reports service status clearly.
-#     Ideal for testing, security auditing, or local privacy analysis.
-# =============================================
+<#
+Anti-Cheat Disabler & Status Checker (Windows)
+Author: Andrew or Sloff11550
+License: MIT
 
+Description:
+This script attempts to disable all known kernel/user-mode anti-cheat
+services temporarily (until reboot), and reports service status clearly.
+Ideal for testing, security auditing, or local privacy analysis.
+#>
+
+```powershell
 $antiCheatServices = @(
     "BEService",             # BattlEye
     "BEDaisy",              # BattlEye Kernel Driver
@@ -90,3 +92,4 @@ if ($disableFailures.Count -eq 0 -and $notInstalledInfo.Count -eq 0) {
 }
 
 Write-Host "\nCheck complete. Anti-cheat services above marked in red are actively running."
+```
