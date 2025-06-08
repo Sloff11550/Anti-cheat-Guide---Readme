@@ -1,4 +1,4 @@
-*
+/*
  * ✅ Anti-Cheat Watchdog Core
  * ----------------------------
  * This code monitors known anti-cheat services and drivers from a Windows system tray app.
@@ -26,6 +26,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Timers;
 using System.Windows.Forms;
+using System.Drawing;
 using System.Management; // For WMI driver scanning
 
 namespace AntiCheatTrayWatcher
@@ -33,8 +34,8 @@ namespace AntiCheatTrayWatcher
     static class Program
     {
         static NotifyIcon trayIcon;
-        static Timer checkTimer;
-        static Dictionary<string, DateTime?> activeAntiCheats = new();
+        static System.Timers.Timer checkTimer;
+        static Dictionary<string, DateTime?> activeAntiCheats = new Dictionary<string, DateTime?>();
         static List<string> monitoredServices = new List<string>
         {
             "BEService",
@@ -92,7 +93,7 @@ namespace AntiCheatTrayWatcher
                 }
             };
 
-            checkTimer = new Timer(3000);
+            checkTimer = new System.Timers.Timer(3000);
             checkTimer.Elapsed += CheckServices;
             checkTimer.Start();
 
